@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="button_cache_database">
+        <div class="left_button">
+            <div class="button-name">
+                Cache database
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_remove_pos_cache">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/reset.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Remove POS cached
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_sync_backend">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/reset.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Sync with backend
+            </div>
+        </div>
+    </t>
+
+<!--    <t t-name="button_barcode">-->
+<!--        <div class="left_button">-->
+<!--            <div class="button-icon">-->
+<!--                <img src="/pos_retail/static/src/icons/barcode.png" class="pos_logo"/>-->
+<!--            </div>-->
+<!--            <div class="button-name">-->
+<!--                Scan barcode-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </t>-->
+
+    <t t-name="button_create_internal_transfer">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/internal_transfer.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Internal Transfer
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_create_purchase_order">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/purchase.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Create PO
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_combo">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/combo.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Add Pack/Combo
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_combo_item_add_lot">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/lot.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Add lot combo items
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_global_discount">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/global_discount.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Global Discounts
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_lock_unlock_order">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/lock_order.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Lock order
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_change_unit">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/checklist.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Change Unit
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_line_note">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/note.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Add Line Note
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_order_note">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/note.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Add Order Note
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_order_signature">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/signature.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Signature order
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_print_receipt">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/bill.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Review Receipt
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_print_last_order">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/bill.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Print bill last order
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_add_variants">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/checklist.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Add variants
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_remove_variants">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/trash.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Remove variants
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_register_payment">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/register_payment.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Register payment
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_set_tags">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/tag.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Add tags
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_return_products">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/refund.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Fast return
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_go_invoice_screen">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/invoice.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Invoices
+            </div>
+        </div>
+    </t>
+
+    <t t-name="product_operation_button">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/barcode.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Products Operation
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_print_test">
+        <div class="btn">
+            <i class='fa fa fa-print' />Test Printer
+        </div>
+    </t>
+
+    <t t-name="button_selection_pricelist">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/checklist.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                <t t-esc='widget.get_order_pricelist()'/>
+            </div>
+        </div>
+    </t>
+
+    <!-- change stype button core -->
+    <t t-extend="DiscountButton">
+        <t t-jquery=".js_discount" t-operation="replace">
+            <div class="left_button">
+                <div class="button-icon">
+                    <img src="/pos_retail/static/src/icons/discounts.png" class="pos_logo"/>
+                </div>
+                <div class="button-name">
+                    Discount
+                </div>
+            </div>
+        </t>
+    </t>
+
+    <t t-extend="ReprintButton">
+        <t t-jquery="div[class*='js_reprint']" t-operation="replace">
+            <div class="left_button">
+                <div class="button-icon">
+                    <img src="/pos_retail/static/src/icons/bill.png" class="pos_logo"/>
+                </div>
+                <div class="button-name">
+                    RePrint Receipt
+                </div>
+            </div>
+        </t>
+    </t>
+
+    <t t-extend="SetPricelistButton">
+        <t t-jquery=".o_pricelist_button" t-operation="replace">
+            <div class="left_button">
+                <div class="button-icon">
+                    <img src="/pos_retail/static/src/icons/checklist.png" class="pos_logo"/>
+                </div>
+                <div class="button-name">
+                    <t t-esc='widget.get_current_pricelist_name()'/>
+                </div>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="button_print_user_card">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/id_card.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Print user card
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_clear_order">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/trash.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Clean empty order
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_lock_session">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/lock_screen.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Lock session
+            </div>
+        </div>
+    </t>
+
+    <t t-extend="SetFiscalPositionButton">
+        <t t-jquery="div[class*='control-button']" t-operation="replace">
+            <div class="left_button">
+                <div class="button-icon">
+                    <img src="/pos_retail/static/src/icons/accounting.png" class="pos_logo"/>
+                </div>
+                <div class="button-name">
+                    <t t-esc='widget.get_current_fiscal_position_name()'/>
+                </div>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="button_set_location">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/warehouse.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                <t t-esc="widget.pos.get_location()['name']"/>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_check_stock">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/warehouse.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Qty available selected line
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_restart_session">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/users.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                <t t-esc="widget.pos.get_config()['name']"/>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_medical_insurance_screen">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/medical.png" class="pos_logo"/>
+            </div>
+            <t t-if="widget.pos.get_order()">
+                <div class="button-name">
+                    <t t-if="widget.pos.get_order().get_medical_insurance()">
+                        <t t-esc="widget.pos.get_order().get_medical_insurance().employee"/>
+                    </t>
+                    <t t-if="!widget.pos.get_order().get_medical_insurance()">
+                        Add insurance
+                    </t>
+                </div>
+            </t>
+            <t t-if="!widget.pos.get_order()">
+                <div class="button-name">
+                    Add insurance
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="button_set_guest">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/guests.png" class="pos_logo"/>
+            </div>
+            <t t-if="widget.pos.get_order()">
+                <div class="button-name">
+                    <t t-if="widget.pos.get_order().get_guest()">
+                        <t t-esc="widget.pos.get_order().get_guest()"/>
+                    </t>
+                    <t t-if="!widget.pos.get_order().get_guest()">
+                        Set Guest
+                    </t>
+                </div>
+            </t>
+            <t t-if="!widget.pos.get_order()">
+                <div class="button-name">
+                    Set Guest
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="button_reset_sequence">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/reset.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Reset Sequence
+            </div>
+        </div>
+    </t>
+
+    <t t-name="button_change_tax">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/taxes.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Change taxes
+            </div>
+        </div>
+    </t>
+
+    <t t-extend="OrderlineNoteButton">
+        <t t-jquery="div[class*='control-button']" t-operation="replace">
+            <div class="left_button">
+                <div class="button-icon">
+                    <img src="/pos_retail/static/src/icons/note.png" class="pos_logo"/>
+                </div>
+                <div class="button-name">
+                    Note
+                </div>
+            </div>
+        </t>
+    </t>
+
+    <t t-name="button_turn_onoff_printer">
+        <t t-if="widget.pos.config.iface_print_via_proxy">
+             <div class="left_button highlight">
+                <div class="button-icon">
+                    <img src="/pos_retail/static/src/icons/printer.png" class="pos_logo"/>
+                </div>
+                <div class="button-name">
+                    Turn on printer
+                </div>
+            </div>
+        </t>
+
+        <t t-if="!widget.pos.config.iface_print_via_proxy">
+            <div class="left_button">
+                <div class="button-icon">
+                    <img src="/pos_retail/static/src/icons/printer.png" class="pos_logo"/>
+                </div>
+                <div class="button-name">
+                    Turn off printer
+                </div>
+            </div>
+        </t>
+    </t>
+
+</templates>

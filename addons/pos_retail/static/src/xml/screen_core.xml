@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="customer_screen">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <t t-foreach="images" t-as="image">
+                    <div class="swiper-slide" t-att-style="image.image_url">
+                        <t t-if="image.name">
+                            <li><t t-esc="image.name"/></li>
+                        </t>
+                        <t t-if="image.description">
+                            <li><t t-esc="image.description"/></li>
+                        </t>
+                    </div>
+                </t>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+                <t t-foreach="images" t-as="image">
+                    <div class="swiper-slide" t-att-style="image.image_url">
+                        <li><t t-esc="image.name"/></li>
+                    </div>
+                </t>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="user_card_xml">
+        <receipt align='center' width='40' value-thousands-separator='' >
+            <t t-if='company.logo'>
+                <img t-att-src='company.logo' />
+                <br/>
+            </t>
+            <t t-if='!company.logo'>
+                <h1><t t-esc='company.name' /></h1>
+                <br/>
+            </t>
+            <t t-if='company.website'>
+                Website: <t t-esc='company.website' />
+                <br/>
+            </t>
+            <t t-if='company.phone'>
+                Phone: <t t-esc='company.phone' />
+                <br/>
+            </t>
+            <t t-if='company.email'>
+                Email: <t t-esc='company.email' />
+                <br/>
+            </t>
+            <div font='b'>
+                <t>
+                    <left>
+                        <t t-esc="user.name"/>
+                    </left>
+                    <cennter>
+                        <t t-esc="user.email"/>
+                    </cennter>
+                    <right>
+                        <barcode encoding="ean13"><t t-esc='user.barcode'/></barcode>
+                    </right>
+                </t>
+            </div>
+        </receipt>
+    </t>
+
+    <t t-name="receipt_review">
+        <div class='receipt-screen screen'>
+            <div class='full_width screen-content'>
+                <div class='top-content'>
+                    <span class='button back'>
+                        Back
+                        <i class='fa fa-angle-double-left'></i>
+                    </span>
+                </div>
+                <div class="centered-content touch-scrollable">
+                    <div class="btn btn-default button print">
+                        <i class='fa fa-print'></i> Print Receipt
+                    </div>
+                    <div class="pos-receipt-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="pos_ticket_review">
+        <div class="pos-sale-ticket">
+            <t>
+                <img id="barcode" class="barcode_receipt oe_hidden"/>
+            </t>
+            <div class="pos-center-align"><t t-esc="order.formatted_validation_date"/> <t t-esc="order.name"/></div>
+            <br />
+            <t t-esc="widget.pos.company.name"/><br />
+            <div class="receipt-phone">
+                Phone: <t t-esc="widget.pos.company.phone || ''"/><br />
+            </div>
+            <div class="receipt-user">
+                User: <t t-esc="widget.pos.get_cashier().name"/><br />
+            </div>
+            <br />
+            <t t-if="receipt.header">
+                <div style='text-align:center'>
+                    <t t-esc="receipt.header" />
+                </div>
+                <br />
+            </t>
+            <table class='receipt-orderlines'>
+                <colgroup>
+                    <col width='70%' />
+                    <col width='30%' />
+                </colgroup>
+                <tr t-foreach="orderlines" t-as="orderline">
+                    <td>
+                        <t t-esc="orderline.get_product().display_name"/>
+                         <t t-if="orderline.get_discount() > 0">
+                            <div>
+                                With a <t t-esc="orderline.get_discount()"/>% discount
+                            </div>
+                        </t>
+                    </td>
+                    <td class="pos-right-align">
+                        <t t-esc="orderline.get_quantity_str_with_unit()"/>
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <t t-if="receipt.footer">
+                <br />
+                <div style='text-align:center'>
+                    <t t-esc="receipt.footer" />
+                </div>
+            </t>
+        </div>
+    </t>
+
+</templates>

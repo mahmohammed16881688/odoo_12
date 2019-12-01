@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="Orderline">
+        <t t-jquery="ul[class*='info-list']:eq(0)" t-operation="before">
+            <ul class="extra_functions">
+            </ul>
+        </t>
+    </t>
+
+    <t t-extend="ActionpadWidget">
+        <t t-jquery="button[t-attf-class*='button set-customer']" t-operation="replace">
+            <t t-if="widget.pos.config.allow_customer">
+                <button t-attf-class='button set-customer #{ ( widget.pos.get_client() and widget.pos.get_client().name.length > 10) ? "decentered" : "" }'>
+                    <t t-if="widget.pos.config.keyboard_event">
+                        <span class="button_key" style="float:right">
+                            <i class="fa fa-keyboard"></i>
+                            c
+                        </span>
+                    </t>
+                    <t t-if="widget.pos.get_client()">
+                        <t t-esc="widget.pos.get_client().name"/>
+                    </t>
+                    <t t-if="!widget.pos.get_client()">
+                        Customer
+                    </t>
+                </button>
+            </t>
+            <t t-if="!widget.pos.config.allow_customer">
+                <button t-attf-class='button set-customer #{ ( widget.pos.get_client() and widget.pos.get_client().name.length > 10) ? "decentered" : "" }'
+                        style="display:none">
+                    <t t-if="widget.pos.config.keyboard_event">
+                        <span class="button_key">
+                            c
+                        </span>
+                    </t>
+                    <t t-if="!widget.pos.get_client()">
+                        Customer
+                    </t>
+                </button>
+            </t>
+        </t>
+        <t t-jquery="button[class*='pay']" t-operation="replace">
+            <t t-if="widget.pos.config.allow_payment">
+                <button class='button pay'>
+                    <div class="button-icon">
+                        <img src="/pos_retail/static/src/icons/atm.png" class="pos_logo"/>
+                    </div>
+                    Payment
+                    <t t-if="widget.pos.config.keyboard_event">
+                        <span class="button_key">
+                            Space
+                        </span>
+                    </t>
+                    <t t-set="client" t-value="widget.pos.get_client()"/>
+                    <t t-if="client">
+                        <t t-if="client.balance">
+                            <li class="client-special-info">
+                                Credit: <t t-esc="widget.format_currency(client.balance)"/>
+                            </li>
+                        </t>
+                        <t t-if="client.wallet">
+                            <li class="client-special-info">
+                                Wallet: <t t-esc="widget.format_currency(client.wallet)"/>
+                            </li>
+                        </t>
+                        <t t-if="client.pos_loyalty_point">
+                            <li class="client-special-info">
+                                Point: <t t-esc="client.pos_loyalty_point"/>
+                            </li>
+                        </t>
+
+                    </t>
+                </button>
+            </t>
+            <t t-if="!widget.pos.config.allow_payment">
+                <button class='button pay' style="display:none">
+                    <div class="button-icon">
+                        <img src="/pos_retail/static/src/icons/atm.png" class="pos_logo"/>
+                    </div>
+                    Payment
+                    <t t-if="widget.pos.config.keyboard_event">
+                        <span class="button_key">
+                            Space
+                        </span>
+                    </t>
+                </button>
+            </t>
+        </t>
+    </t>
+
+    <t t-extend="Orderline">
+        <t t-jquery="span[class*='price']" t-operation="replace">
+            <t t-if="widget.pos.config.subtotal_tax_included">
+                <span class="price">
+                    <t t-esc="widget.format_currency(line.get_price_tax_inclued())"/>
+                </span>
+            </t>
+            <t t-if="!widget.pos.config.subtotal_tax_included">
+                <span class="price">
+                    <t t-esc="widget.format_currency(line.get_display_price())"/>
+                </span>
+            </t>
+        </t>
+        <t t-jquery="span[class*='product-name']" t-operation="replace">
+            <span class="product-name">
+                <span class="line_number">
+                    <t t-esc="line.get_number_of_order()"/>.
+                </span>
+                <t t-if="!line.promotion">
+                    <t t-if="widget.pos.config.display_image_orderline and !widget.pos.config.mobile_responsive">
+                        <img class='orderline_image' t-att-src="line.get_line_image()"/>
+                    </t>
+                </t>
+                <t t-if="line.promotion">
+                    <t t-if="widget.pos.config.display_image_orderline">
+                        <img class="order_line_logo" src="/pos_retail/static/src/icons/gift_header.png"/>
+                    </t>
+                </t>
+                <t t-esc="line.get_product().display_name"/>
+                <t t-if="line.get_product().tracking!=='none'">
+                    <i t-attf-class="oe_link_icon fa fa-list oe_icon line-lot-icon #{line.has_valid_product_lot() ? 'oe_green' : 'oe_red' }"/>
+                </t>
+            </span>
+        </t>
+        <t t-jquery="ul[class*='extra_functions']" t-operation="append">
+            <t t-if="line.selected">
+                <li class="info">
+                    <t t-if="widget.pos.config.display_tax_orderline and line.get_tax()">
+                        Amount tax: <t t-esc="widget.format_currency(line.get_tax())"/>
+                    </t>
+                    <t t-if="line.discount">
+                        Amount discount: <t t-esc="widget.format_currency(line.get_price_discount())"/>
+                    </t>
+                    <t t-if="line.plus_point != 0">
+                        <span class="line_plus_point">
+                            Plus point: <t t-esc="line.plus_point"/>
+                        </span>
+                    </t>
+                    <t t-if="line.redeem_point != 0">
+                        <span class="line_redeem_point">
+                            Redeem point: <t t-esc="line.redeem_point"/>
+                        </span>
+                    </t>
+                    <t t-if="widget.pos.config.sale_with_package and line.get_packaging_added()">
+                        <span class="packaging">
+                            <t t-if="line.get_packaging_added()">
+                                Packaging: <t t-esc="line.get_packaging_added().name"/>
+                            </t>
+                        </span>
+                    </t>
+                </li>
+                <t t-if="line.get_product_price_quantity_item()">
+                    <span class="line_product_price_quantity">
+                        <t t-set="product_price_quantity" t-value="line.get_product_price_quantity_item()"/>
+                        <i class="fa fa-certificate"/> Added rule: Bought <t t-esc="product_price_quantity['quantity']"/> with price <t t-esc="widget.format_currency(product_price_quantity['price_unit'])"/>
+                    </span>
+                </t>
+                <t t-if="line.combo_items">
+                    <t t-foreach="line.combo_items" t-as="combo_item">
+                        <ul class="bus-info">
+                            <li class="info">
+                                <t t-esc="combo_item.product_id[1]"/>
+                                with qty :
+                                <t t-esc="combo_item.quantity * line['quantity']"/>
+                                <t t-if="combo_item.lot_number">
+                                    , Lot/Serial Number : <t t-esc="combo_item.lot_number"/>
+                                </t>
+                                <t t-if="combo_item.use_date">
+                                    Expired date of lot: <t t-esc="combo_item.use_date"/>
+                                </t>
+                                <t t-if="combo_item.price_extra">
+                                    And price extra <t t-esc="widget.format_currency(combo_item.price_extra)"/>
+                                </t>
+                            </li>
+                        </ul>
+                    </t>
+                </t>
+                <t t-if="line.is_return">
+                    <ul class="bus-info">
+                        <li class="return_line">
+                            Refund/return line
+                        </li>
+                    </ul>
+                </t>
+                <t t-foreach="line.variants" t-as="variant">
+                    <ul class="bus-info">
+                        <li class="info">
+                            <t t-esc="variant.value_id[1]"/>
+                            <span class='price'>
+                                <t t-esc="widget.format_currency(variant.price_extra, 'Price extra')"/>
+                            </span>
+                        </li>
+                    </ul>
+                </t>
+                <t t-if="line.pack_lot_lines and line.pack_lot_lines.length">
+                    <t t-set="lot" t-value="line.pack_lot_lines.models[0]"/>
+                    <t t-set="lot_values" t-value="lot.attributes"/>
+                    <t t-if="lot_values['lot_name']">
+                        <ul class="bus-info">
+                            <li class="info">
+                                Lot: <t t-esc="lot_values['lot_name']"/>
+                            </li>
+                            <t t-if="lot_values['lot']">
+                                <li class="info">
+                                    <t t-if="lot_values['lot']['barcode']">
+                                        Lot Barcode: <t t-esc="lot_values['lot']['barcode']"/>
+                                    </t>
+                                    <t t-if="lot_values['lot']['life_date']">
+                                        Expired date: <t t-esc="lot_values['lot']['life_date']"/>
+                                    </t>
+                                </li>
+                            </t>
+                        </ul>
+                    </t>
+                </t>
+                <t t-if="line.product and line.product.tracking == 'lot' and line.lot_ids and line.lot_ids.length"> <!-- // line multi lots -->
+                    <ul class="bus-info">
+                        <t t-foreach="line.lot_ids" t-as="lot">
+                            <li class="info">
+                                <i class="oe_link_icon fa fa-list oe_icon line-lot-icon oe_green"></i>
+                                Lot name <t t-esc="lot.name"/> with qty: <t t-esc="lot.quantity"/>
+                            </li>
+                        </t>
+                    </ul>
+                </t>
+                <t t-if="line.get_line_note()">
+                    <ul class="bus-info">
+                        <li class="info">
+                            <t t-esc="line.get_line_note()"/>
+                        </li>
+                    </ul>
+                </t>
+                <t t-if="line.tags and line.tags.length">
+                    <ul class="bus-info">
+                        <t t-foreach="line.tags" t-as="tag">
+                            <span class='info' t-att-data-id="tag.id">
+                                <t t-esc="tag.name"/>
+                            </span>
+                        </t>
+                    </ul>
+                </t>
+                <t t-if="line.discount_reason">
+                    <ul class="bus-info">
+                        <li class="info">
+                            Discount reason: <t t-esc="line.discount_reason"/>
+                        </li>
+                    </ul>
+                </t>
+            </t>
+            <t t-if="!line.product.is_voucher and line.selected">
+                <li class="info">
+                    <t t-if="line.product.multi_variant">
+                        <span class="icon_line" title="Add variants attributes">
+                            <img src="/pos_retail/static/src/icons/checklist.png" class="icon_line_logo multi_variant"/>
+                        </span>
+                    </t>
+                    <t t-if="widget.pos.config.fast_remove_line">
+                        <span class="icon_line" title="Remove line">
+                            <img src="/pos_retail/static/src/icons/trash.png" class="icon_line_logo remove_line"/>
+                        </span>
+                    </t>
+                    <t t-if="widget.pos.config.multi_lots and line and line.product and line.product.tracking == 'lot'">
+                        <span class="icon_line" title="Add lots">
+                            <img src="/pos_retail/static/src/icons/checklist.png" class="icon_line_logo multi_lots"/>
+                        </span>
+                    </t>
+                    <t t-if="line.get_sale_person() and widget.pos.config.add_sale_person">
+                        <span class="icon_line" title="Add sale person">
+                            <img src="/pos_retail/static/src/icons/seller.png" class="icon_line_logo add_sale_person"/>
+                            <t t-esc="line.get_sale_person().display_name"/>
+                        </span>
+                    </t>
+                    <t t-if="!line.get_sale_person() and widget.pos.config.add_sale_person and widget.pos.bus_locations and widget.pos.bus_locations.length > 0">
+                        <span class="icon_line" title="Add sale person">
+                            <img src="/pos_retail/static/src/icons/seller.png"
+                                 class="icon_line_logo add_sale_person oe_red"/>
+                        </span>
+                    </t>
+                    <t t-if="line.product.multi_uom">
+                        <span class="icon_line" title="Change unit of measure">
+                            <img src="/pos_retail/static/src/icons/list.png" class="icon_line_logo change_unit"/>
+                        </span>
+                    </t>
+                    <t t-if="line.product.is_combo">
+                        <span class="icon_line" title="Combo">
+                            <img src="/pos_retail/static/src/icons/combo.png" class="icon_line_logo change_combo"/>
+                        </span>
+                    </t>
+                    <t t-if="line.product.cross_selling">
+                        <span class="icon_line" title="Cross selling">
+                            <img src="/pos_retail/static/src/icons/sale_off.png"
+                                 class="icon_line_logo change_cross_selling"/>
+                        </span>
+                    </t>
+                    <t t-if="widget.pos.config.note_orderline">
+                        <span class="icon_line" title="Take note">
+                            <img src="/pos_retail/static/src/icons/chat.png" class="icon_line_logo change_line_note"/>
+                        </span>
+                    </t>
+                    <t t-if="widget.pos.tags and widget.pos.tags.length > 0 and widget.pos.config.add_tags">
+                        <span class="icon_line" title="Tags">
+                            <img src="/pos_retail/static/src/icons/tag.png" class="icon_line_logo change_tags"/>
+                        </span>
+                    </t>
+                    <t t-if="widget.pos.discounts and widget.pos.discounts.length > 0 and widget.pos.config.discount_each_line">
+                        <span class="icon_line" title="Discounts">
+                            <img src="/pos_retail/static/src/icons/discounts.png" class="icon_line_logo add_discount"/>
+                        </span>
+                    </t>
+                    <t t-if="line.get_packaging()">
+                        <span class="icon_line" title="Packaging">
+                            <img src="/pos_retail/static/src/icons/box_packaging.png"
+                                 class="icon_line_logo product_packaging"/>
+                        </span>
+                    </t>
+                </li>
+            </t>
+        </t>
+        <t t-jquery="span[class*='button-name']" t-operation="replace">
+            <span class="button-name">
+                <span class="line_number">
+                    <t t-esc="line.get_number_of_order()"/>.
+                </span>
+                <t t-if="!line.promotion">
+                    <t t-if="widget.pos.config.display_image_orderline and !widget.pos.config.mobile_responsive">
+                        <img class='orderline_image' t-att-src="line.get_line_image()"/>
+                    </t>
+                </t>
+                <t t-if="line.promotion">
+                    <t t-if="widget.pos.config.display_image_orderline">
+                        <img class="order_line_logo" src="/pos_retail/static/src/icons/gift_header.png"/>
+                    </t>
+                </t>
+                <t t-esc="line.get_product().display_name"/>
+                <t t-if="line.get_product().tracking!=='none'">
+                    <i t-attf-class="oe_link_icon fa fa-list oe_icon line-lot-icon #{line.has_valid_product_lot() ? 'oe_green' : 'oe_red' }"/>
+                </t>
+            </span>
+        </t>
+    </t>
+
+    <t t-extend="OrderWidget">
+        <t t-jquery="div[class*='order-scroller touch-scrollable']" t-operation="before">
+            <div class="header_order">
+                <div class="header_order_widget_logo js_proxy">
+                    <div class="js_connected oe_icon ">
+                        <img src="/pos_retail/static/src/icons/shopping_cart_header.png" class="order_logo"/>
+                        <span class="notification set_total_items">0</span>
+                    </div>
+                </div>
+                <div class="header_order_widget_logo js_proxy">
+                    <div class="js_connected oe_icon ">
+                        <img src="/pos_retail/static/src/icons/amount_total.png" class="order_logo"/>
+                        <span class="notification amount_total">0</span>
+                    </div>
+                </div>
+                <div class="header_order_widget_logo js_proxy">
+                    <div class="js_connected oe_icon ">
+                        <img src="/pos_retail/static/src/icons/gift_header.png" class="order_logo"/>
+                        <span class="notification total_gift">0</span>
+                    </div>
+                </div>
+                <t t-if="widget.pos.config.allow_customer">
+                    <div class="find_customer">
+                        <input id='find_partner_id' placeholder="Partner phone" class="ui-autocomplete-input find_partner_input" autocomplete="off"/>
+                    </div>
+                </t>
+            </div>
+        </t>
+        <t t-jquery="div[class*='line']" t-operation="replace">
+            <div t-attf-class='line #{ widget.pos.config.hide_amount_total ? "oe_hidden" : ""}'>
+                <div class='entry total'>
+                    <span t-attf-class='badge #{ widget.pos.config.hide_amount_total ? "oe_hidden" : ""}'>Total: </span>
+                    <span t-attf-class='value #{ widget.pos.config.hide_amount_total ? "oe_hidden" : ""}'>0.00 €</span>
+                    <div t-attf-class='subentry #{ widget.pos.config.hide_amount_taxes ? "oe_hidden" : ""}'>Taxes: <span
+                            t-attf-class='value #{ widget.pos.config.hide_amount_taxes ? "oe_hidden" : ""}'>0.00€</span></div>
+                </div>
+            </div>
+        </t>
+        <t t-jquery=".summary" t-operation="append">
+            <t t-if="widget.pos.get_order()">
+                <t t-if="widget.pos.get_order().delivery_address or widget.pos.get_order().delivery_date">
+                    <div class="shipping_information">
+                        <t t-if="widget.pos.get_order()">
+                            <t t-if="widget.pos.get_order().delivery_address">
+                                <div class="label">
+                                    Shipping to:
+                                    <span class='value delivery_address'></span>
+                                </div>
+                            </t>
+                            <t t-if="widget.pos.get_order().delivery_date">
+                                <div class="label">
+                                    Shipping date:
+                                    <span class='value delivery_date'></span>
+                                </div>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+                <div class="pos_note">
+                    Note: <span class="order-note"/>
+                </div>
+                <t t-if="widget.pos.config.signature_order">
+                    <div class="order_signature">
+                        Signature:
+                        <img class="product-img signature"
+                             src=""
+                        />
+                    </div>
+                </t>
+            </t>
+        </t>
+    </t>
+</templates>

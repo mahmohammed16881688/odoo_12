@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="popup_create_lots">
+	    <div class="modal-dialog clientlist-screen">
+            <div class="popup popup-textinput balance-popup">
+                <p class="title"><t t-esc=" widget.options.title || '' " /></p>
+                <p class="body"><t t-esc=" widget.options.body || '' " /></p>
+              	<div class='lots-grid'>
+					<table class="client-list" id="lots_tree">
+						<thead>
+							<th>Serial/Number</th>
+							<th>Product</th>
+							<th>Quantity</th>
+							<th>Delete</th>
+						</thead>
+						<tbody class="client-list-contents">
+							<t t-set="index" t-value="1" />
+							<t t-if="widget.options.lot_ids">
+								<t t-foreach='widget.options.lots_cache' t-as='lot'>
+									<tr t-att-id="index">
+										<td>
+											<input class="lot_input" name='name' type="text" t-att-value="lot['name']" t-att-id='"lot_index" + index'></input>
+										</td>
+										<td>
+											<t t-set="product" t-value="widget.pos.db.product_by_id[lot['product_id']]"/>
+											<input class="lot_input" name='product_id' type="text" t-att-value="product['display_name']" t-att-id='"lot_index" + index'></input>
+										</td>
+										<td>
+											<input class="lot_input" name='quantity' type='number' t-att-value="lot['quantity']" t-att-id='"lot_index" + index'></input>
+										</td>
+										<td class="">
+											<span class="lot-delete fa fa-trash-o" name="delete"></span>
+										</td>
+									</tr>
+									<t t-set="index" t-value="index + 1" />
+								</t>
+								<t>
+									<tr>
+										<td class='lot-add'>
+											<span class="fa fa-plus" name="add"> </span>
+										</td>
+										<td></td>
+										<td></td>
+									</tr>
+								</t>
+							</t>
+						</tbody>
+					</table>
+                </div>
+               	<div class="footer">
+                   	<div class="button confirm">
+                       	Confirm
+                   	</div>
+                   	<div class="button cancel">
+                       	Cancel
+                   	</div>
+               	</div>
+            </div>
+        </div>
+    </t>
+
+	<t t-name="button_create_lots">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/barcode.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Create lots
+            </div>
+        </div>
+    </t>
+
+</templates>

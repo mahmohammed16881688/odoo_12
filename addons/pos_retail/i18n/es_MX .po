@@ -1,0 +1,415 @@
+#. module: point_of_sale
+#: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
+msgid "Opening Balance"
+msgstr "Fondo de Incio de Apertura"
+
+#. module: account
+#: code:addons/account/models/account.py:169
+#, python-format
+msgid "Opening balance"
+msgstr "Fondo de Incio de Apertura"
+
+#. module: account
+#: model:ir.model.fields,help:account.field_account_bank_statement__balance_end
+msgid "Balance as calculated based on Opening Balance and transaction lines"
+msgstr "El saldo se ha calculado basado en el Fondo de Incio de Apertura y las líneas de transacción"
+
+#. module: pos_retail
+#: model:ir.model.fields,field_description:pos_retail.field_pos_order__user_id
+msgid "Cashier"
+msgstr "Cajero"
+
+#. module: point_of_sale
+#: model:ir.model.fields,field_description:point_of_sale.field_report_pos_order__user_id
+msgid "Salesperson"
+msgstr "Cajero"
+
+#. module: pos_retail
+#: model:ir.model.fields,field_description:pos_retail.field_pos_order__salesman_id
+msgid "Salesman"
+msgstr "Vendedor"
+
+#. module: point_of_sale
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_box_in
+msgid "Put Money In"
+msgstr "Ingresar Valores"
+
+#. module: point_of_sale
+#: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
+msgid "<span class=\"o_stat_text\">Put</span>\n"
+"                                <span class=\"o_stat_text\">Money In</span>"
+msgstr "<span class=\"o_stat_text\">Ingresar</span>\n"
+"<span class=\"o_stat_text\">Valores</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.cash_box_in_form
+msgid "Fill in this form if you put money in the cash register:"
+msgstr "Rellene este formulario si Ingresar Valores la caja registradora:"
+
+#. module: account
+#: model:ir.actions.act_window,name:account.action_cash_box_in
+#: model_terms:ir.ui.view,arch_db:account.cash_box_in_form
+msgid "Put Money In"
+msgstr "Ingresar Valores"
+
+#. module: pos_retail
+#. openerp-web
+#: code:addons/pos_retail/static/src/xml/buttons.xml:605
+#: code:addons/pos_retail/static/src/xml/popups.xml:1375
+#, python-format
+msgid "Put money in"
+msgstr "Ingresar Valores"
+
+#. module: pos_retail
+#. openerp-web
+#: code:addons/pos_retail/static/src/xml/buttons.xml:616
+#: code:addons/pos_retail/static/src/xml/popups.xml:1466
+#, python-format
+msgid "Take money out"
+msgstr "Retirar Valores"
+
+#. module: point_of_sale
+#: model:ir.actions.act_window,name:point_of_sale.action_pos_box_out
+msgid "Take Money Out"
+msgstr "Retirar Valores"
+
+#. module: point_of_sale
+#: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
+msgid "<span class=\"o_stat_text\">Take</span>\n"
+"                                <span class=\"o_stat_text\">Money Out</span>"
+msgstr "<span class=\"o_stat_text\">Retirar</span>\n"
+"<span class=\"o_stat_text\">Valores</span>"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.cash_box_out_form
+msgid "Describe why you take money from the cash register:"
+msgstr "Indique por qué retirar valores de la caja registradora:"
+
+#. module: account
+#: model:ir.actions.act_window,name:account.action_cash_box_out
+#: model_terms:ir.ui.view,arch_db:account.cash_box_out_form
+msgid "Take Money Out"
+msgstr "Retirar Valores"
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_picking_form
+#: model_terms:ir.ui.view,arch_db:stock.view_stock_return_picking_form
+msgid "Return"
+msgstr "Devolución"
+
+#. module: pos_discount
+#. openerp-web
+#: code:addons/pos_discount/static/src/xml/discount_templates.xml:6
+#, python-format
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: sale
+#: model_terms:ir.ui.view,arch_db:sale.view_sales_order_line_filter
+msgid "Order"
+msgstr "Nota de Venta"
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:311
+#: model:ir.model.fields,field_description:point_of_sale.field_report_pos_order__order_id
+#, python-format
+msgid "Order"
+msgstr "Nota de Venta"
+
+#. module: pos_retail
+#: model:ir.model.fields,field_description:pos_retail.field_pos_manufacturing_report__order_id
+#: model:ir.model.fields,field_description:pos_retail.field_sale_order_line_insert__order_id
+msgid "Order"
+msgstr "Nota de Venta"
+
+#. module: sanborn_pos_retail_cases
+#. openerp-web
+#: code:addons/sanborn_pos_retail_cases/static/src/xml/buttons.xml:9
+#: model:ir.actions.act_window,name:sanborn_pos_retail_cases.action_mesa_gift
+#: model:ir.model.fields,field_description:sanborn_pos_retail_cases.field_pos_order__mesa_gift_id
+#: model:ir.ui.menu,name:sanborn_pos_retail_cases.mesa_gift
+#: model_terms:ir.ui.view,arch_db:sanborn_pos_retail_cases.mesa_gift_tree
+#: model_terms:ir.ui.view,arch_db:sanborn_pos_retail_cases.view_pos_pos_form
+#, python-format
+msgid "Mesa Gift"
+msgstr "Mesa de Regalos"
+
+#. module: sanborn_pos_retail_cases
+#: model:ir.model.fields,field_description:sanborn_pos_retail_cases.field_pos_order__mesa_event_code
+msgid "Mesa Gift Event Code"
+msgstr "Mesa de Regalos código de evento"
+
+#. module: sanborn_pos_retail_cases
+#: model:ir.model.fields,field_description:sanborn_pos_retail_cases.field_pos_order__is_mesa_gift
+msgid "Mesa Gift Order"
+msgstr "Mesa de Regalos Nota de Venta"
+
+#. module: sanborn_pos_retail_cases
+#. openerp-web
+#: code:addons/sanborn_pos_retail_cases/static/src/js/screens.js:131
+#, python-format
+msgid "Mesa Gift Product"
+msgstr "Mesa de Regalos Producto"
+
+#. module: sanborn_pos_retail_cases
+#: model:ir.model.fields,field_description:sanborn_pos_retail_cases.field_pos_order__mesa_product_skus
+msgid "Mesa Gift Product SKUs"
+msgstr "Mesa de Regalos Producto SKUs"
+
+#. module: point_of_sale
+#: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_order_tree
+msgid "POS Orders"
+msgstr "Notas de Venta POS"
+
+#. module: point_of_sale
+#: model:stock.picking.type,name:point_of_sale.picking_type_posout
+msgid "PoS Orders"
+msgstr "Notas de Venta POS"
+
+#. module: pos_retail
+#: model_terms:ir.ui.view,arch_db:pos_retail.pos_order_partial_payment_tree
+msgid "POS Orders"
+msgstr "Notas de Venta POS"
+
+#. module: pos_retail
+#. openerp-web
+#: code:addons/pos_retail/static/src/xml/buttons.xml:391
+#: model_terms:ir.ui.view,arch_db:pos_retail.pos_config_retail
+#, python-format
+msgid "POS orders"
+msgstr "Notas de Venta POS"
+
+#. module: pos_retail
+#. openerp-web
+#: code:addons/pos_retail/static/src/xml/screen_payment.xml:102
+#, python-format
+msgid "Paid full"
+msgstr "Pago exacto"
+
+#. module: pos_retail
+#: model:ir.model.fields,field_description:pos_retail.field_pos_config__paid_full
+msgid "Allow paid full"
+msgstr "Permitir pago exacto"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_payment_term_line_form
+msgid "Due"
+msgstr "Por pagar"
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:550
+#, python-format
+msgid "Due"
+msgstr "Por pagar"
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:551
+#, python-format
+msgid "Tendered"
+msgstr "Monto entregado"
+
+#. module: point_of_sale
+#. openerp-web
+#: code:addons/point_of_sale/static/src/xml/pos.xml:552
+#, python-format
+msgid "Change"
+msgstr "Cambio"
+
+#. module: mail
+#: model_terms:ir.ui.view,arch_db:mail.view_mail_tracking_value_form
+msgid "Change"
+msgstr "Cambio"
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_account_payment_search
+msgid "Payment Method"
+msgstr "Forma de Pago"
+
+#. module: payment
+#: model:ir.model.fields,field_description:payment.field_payment_acquirer_onboarding_wizard__payment_method
+#: model_terms:ir.ui.view,arch_db:payment.onboarding_payment_acquirer_step
+msgid "Payment Method"
+msgstr "Forma de Pago"
+
+#. module: sale
+#: model:ir.model.fields,field_description:sale.field_sale_payment_acquirer_onboarding_wizard__payment_method
+msgid "Payment Method"
+msgstr "Forma de Pago"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_invoice_tax__amount_total
+msgid "Amount Total"
+msgstr "Monto Total"
+
+#. module: account
+#: selection:account.reconcile.model,match_nature:0
+#: selection:account.reconcile.model.template,match_nature:0
+msgid "Amount Paid"
+msgstr "Monto Pagado"
+
+#. module: pos_retail
+#. openerp-web
+#: code:addons/pos_retail/static/src/xml/screen_pos_orders.xml:120
+#: code:addons/pos_retail/static/src/xml/screen_sale_orders.xml:44
+#: code:addons/pos_retail/static/src/xml/screen_sale_orders.xml:206
+#, python-format
+msgid "Amount tax"
+msgstr "Monto Impuestos"
+
+#. module: stock_landed_costs
+#: model_terms:ir.ui.view,arch_db:stock_landed_costs.view_stock_landed_cost_search
+#: model:mail.message.subtype,name:stock_landed_costs.mt_stock_landed_cost_open
+msgid "Done"
+msgstr "Realizado"
+
+#. module: base
+#: selection:ir.actions.todo,state:0
+#: selection:res.company,base_onboarding_company_state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: base
+#: selection:base.language.install,state:0
+#: selection:base.module.update,state:0
+msgid "done"
+msgstr "Realizado"
+
+#. module: mail
+#. openerp-web
+#: code:addons/mail/static/src/xml/activity.xml:101
+#, python-format
+msgid "Done"
+msgstr "Realizado"
+
+#. module: account
+#: selection:res.company,account_dashboard_onboarding_state:0
+#: selection:res.company,account_invoice_onboarding_state:0
+#: selection:res.company,account_onboarding_invoice_layout_state:0
+#: selection:res.company,account_onboarding_sale_tax_state:0
+#: selection:res.company,account_onboarding_sample_invoice_state:0
+#: selection:res.company,account_setup_bank_data_state:0
+#: selection:res.company,account_setup_coa_state:0
+#: selection:res.company,account_setup_fy_data_state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: payment
+#: selection:payment.transaction,state:0
+#: selection:res.company,payment_acquirer_onboarding_state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: sale
+#: selection:res.company,sale_onboarding_order_confirmation_state:0
+#: selection:res.company,sale_onboarding_sample_quotation_state:0
+#: selection:res.company,sale_quotation_onboarding_state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: stock
+#: model:ir.model.fields,field_description:stock.field_stock_move_line__qty_done
+#: model:ir.model.fields,field_description:stock.field_stock_package_level__is_done
+#: model_terms:ir.ui.view,arch_db:stock.stock_move_line_view_search
+#: model_terms:ir.ui.view,arch_db:stock.stock_scrap_form_view2
+#: model_terms:ir.ui.view,arch_db:stock.view_move_search
+#: model_terms:ir.ui.view,arch_db:stock.view_picking_form
+#: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
+#: selection:stock.move,state:0
+#: selection:stock.package_level,state:0
+#: selection:stock.picking,state:0
+#: selection:stock.scrap,state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: point_of_sale
+#: model_terms:ir.ui.view,arch_db:point_of_sale.view_pos_order_filter
+msgid "Done"
+msgstr "Realizado"
+
+#. modules: mrp, stock_picking_batch, stock_cycle_count, purchase
+#: model:ir.model.fields,field_description:mrp.field_stock_move__is_done
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_production_workorder_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:mrp.mrp_unbuild_search_view
+#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_filter
+#: model_terms:ir.ui.view,arch_db:mrp.view_mrp_production_work_order_search
+#: selection:mrp.production,state:0
+#: selection:mrp.unbuild,state:0
+#: selection:purchase.report,state:0
+#: model_terms:ir.ui.view,arch_db:stock_cycle_count.stock_cycle_count_search_view
+#: selection:stock.cycle.count,state:0
+#: model_terms:ir.ui.view,arch_db:stock_picking_batch.stock_picking_batch_form
+#: selection:stock.picking.batch,state:0
+msgid "Done"
+msgstr "Realizado"
+
+#. module: pos_retail
+#. openerp-web
+#: code:addons/pos_retail/static/src/xml/screen_clients.xml:11
+#, python-format
+msgid "Add Customer"
+msgstr "Agregar Cliente"
+
+#. module: pos_retail
+#. openerp-web
+#: code:addons/pos_retail/static/src/xml/product.xml:431
+#, python-format
+msgid "Add customer"
+msgstr "Agregar Cliente"
+
+#. module: base
+#: code:addons/base/models/res_users.py:1015
+#: code:addons/base/models/res_users.py:1198
+#: model_terms:ir.ui.view,arch_db:base.user_groups_view
+#, python-format
+msgid "Other"
+msgstr "Otros"
+
+#. module: mail
+#: selection:mail.activity.type,category:0
+msgid "Other"
+msgstr "Otros"
+
+#. module: payment
+#: selection:res.company,payment_onboarding_payment_method:0
+msgid "Other"
+msgstr "Otros"
+
+#. modules: hr, resource, fleet
+#: selection:fleet.vehicle.cost,cost_type:0
+#: selection:hr.employee,certificate:0
+#: selection:hr.employee,gender:0
+#: selection:resource.calendar.leaves,time_type:0
+msgid "Other"
+msgstr "Otros"
+
+#. module: sanborn_pos_retail_cases
+#: model:ir.model.fields,field_description:sanborn_pos_retail_cases.field_pos_order__big_ticket_note
+msgid "Delivery Note"
+msgstr "Instrucciones de Entrega"
+
+#. module: sanborn_pos_retail_cases
+#. openerp-web
+#: code:addons/sanborn_pos_retail_cases/static/src/xml/popups.xml:56
+#, python-format
+msgid "Delivery note"
+msgstr "Instrucciones de Entrega"
+
+#. module: base
+#: model:ir.model.fields,field_description:base.field_res_partner__mobile
+#: model:ir.model.fields,field_description:base.field_res_users__mobile
+#: model_terms:ir.ui.view,arch_db:base.contact
+msgid "Mobile"
+msgstr "Teléfono Celular"
+
+#. module: base
+#: model_terms:ir.ui.view,arch_db:base.view_partner_form
+msgid "Mobile:"
+msgstr "Teléfono Celular:"
+
+#. module: pos_retail
+#: model:ir.model.fields,field_description:pos_retail.field_pos_config__paid_partial
+msgid "Allow partial payment"
+msgstr "Permitir el Pago Parcial"

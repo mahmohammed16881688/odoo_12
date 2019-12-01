@@ -1,0 +1,2549 @@
+.pos {
+    font-family: 'Roboto', Roboto, Arial, sans-serif;
+}
+
+.pos.pos-content {
+    font-family: 'Roboto', Roboto, Arial, sans-serif;
+}
+
+.pos.mobile .leftpane {
+    font-family: 'Roboto', Roboto, Arial, sans-serif;
+}
+
+.pos .search_products {
+    position: unset;
+}
+
+.pos .clientlist-screen .client-detail > .empty {
+    color: white;
+}
+
+.pos .search_products > input {
+    width: 350px;
+}
+
+.pos .price_list {
+    color: #393939;
+}
+
+.pos .modal-dialog {
+    background-color: rgba(0, 0, 0, 0.12)
+}
+
+.pos .only_partial_payment_orders {
+    left: 65%;
+    right: 0%;
+}
+
+.card {
+    background: inherit;
+    min-height: 400px;
+    background: #F0EEEE;
+}
+
+.pos .modal-dialog .popup {
+    height: 600px;
+}
+
+.pos .card {
+    box-shadow: none;
+}
+
+.pos textarea {
+    box-shadow: none;
+}
+
+.pos .popup .button {
+    font-weight: 400;
+    font-size: 18px;
+    background: #333333;
+    color: white;
+}
+
+.pos .client-detail {
+    padding-top: 5px;
+}
+
+.pos .popup .footer {
+    border-top: 0px solid;
+}
+
+.pos .barcode_receipt {
+    padding-left: 30px;
+    height: 75px;
+    width: 214px;
+}
+
+.pos .clientlist-screen .client-detail > .label {
+    text-align: left;
+    width: 30%;
+}
+
+.pos .packaging {
+
+}
+
+.pos .popup .checkbox {
+    padding-bottom: 10px;
+}
+
+.pos .clientlist-screen .client-list tr {
+    background: linear-gradient(to right bottom, #ffffff, #ffffff);
+}
+
+.pos .delivery_address {
+    font-size: 12px;
+}
+
+.screen .right-content {
+    top: 100px;
+}
+
+.pos .pad {
+    cursor: pointer;
+    height: 20px;
+    background: #fff;
+}
+
+.screen .cente#F44336-content {
+    top: 100px;
+    border-right: none;
+    border-left: none;
+}
+
+.pos .oe_status {
+    float: left;
+    font-style: normal;
+    margin: 0px;
+    line-height: 15px;
+}
+
+.pos .oe_status > a {
+    color: #000000;
+}
+
+.pos .clientlist-screen .client-detail {
+    color: #000000;
+    line-height: 20px;
+}
+
+.pos .clientlist-screen .client-details {
+    max-height: 400px;
+    overflow: auto;
+    overflow-y: hidden;
+    border-bottom: none;
+}
+
+.pos .product {
+    height: 120px;
+    width: 120px;
+    border: 0px;
+}
+
+.pos .product:hover {
+    -webkit-box-shadow: 0 10px 6px -6px #FF5722;
+    -moz-box-shadow: 0 10px 6px -6px #FF5722;
+    box-shadow: 0 10px 6px -6px #FF5722;
+}
+
+.pos .product .sale_with_package {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    line-height: 8px;
+    padding: 1px;
+    border-radius: 0px;
+}
+
+.pos .product .variant {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.pos .product .qty_available {
+    position: absolute;
+    float: right;
+    color: blue;
+    line-height: 13px;
+    margin-top: 25px;
+    margin-bottom: -34px;
+    border-radius: 0px;
+    right: 2px;
+    background: white;
+}
+
+.pos .product .qty_not_available {
+    position: absolute;
+    float: right;
+    color: red;
+    line-height: 13px;
+    margin-top: 25px;
+    margin-bottom: -34px;
+    border-radius: 0px;
+    right: 2px;
+    background: white;
+}
+
+.pos .product .product-name {
+    color: #000000;
+    max-height: 100px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.pos .product .product-img {
+    position: relative;
+    width: 120px;
+    margin-top: -20px;
+}
+.pos .product .product-img-sale-extra {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: white;
+    text-align: center;
+}
+
+
+.pos .product .product-img img {
+    max-height: none;
+    padding-top: 20px;
+}
+
+.pos .buttons_pane {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 540px;
+    width: 220px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background: inherit;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-y: auto;
+}
+
+.pos .categories_pane {
+    left: 200px;
+    float: right;
+    max-width: 200px;
+    width: 200px;
+}
+
+.pos .category-list-scroller {
+    background: #000000;
+    border-bottom: none;
+    overflow-x: auto;
+    overflow-y: auto;
+    background: inherit;
+}
+
+.pos .category-list {
+    padding-left: 9px;
+}
+
+.pos .breadcrumb {
+    height: auto;
+}
+
+
+.pos .form-control .voucher-select .detail {
+    height: 150px;
+}
+
+.pos .orders {
+    max-width: 80%;
+}
+
+.pos .pos-branding {
+    width: 590px;
+    font-style: normal;
+    color: #000000;
+    border-right: none;
+    overflow-x: auto;
+    overflow: hidden;
+}
+
+.pos .amount_total {
+    font-size: 12px;
+    color: #000000;
+}
+
+.pos .count_item {
+    font-size: 12px;
+    color: #000000;
+}
+
+.pos .pos-rightheader {
+    left: 590px;
+}
+
+.pos .hide_branding {
+    left: 0px !important;
+}
+
+.pos .pos-rightheader > * {
+    border-right: none;
+}
+
+.pos .popup .title {
+    background: #000000;
+    color: #eeeeee;
+}
+
+.pos .lot-add {
+
+}
+
+.pos .username {
+    margin-top: 12px;
+    color: white;
+}
+
+.pos .product .combo-item {
+    line-height: 20px !important;
+}
+
+.pos .product .combo-item .product-img img {
+    max-width: 40px !important;
+    max-height: 40px !important;
+}
+
+.pos .item-selected {
+    border: 1px solid #6ec89b !important;
+    background: #6ec89b !important;
+    color: white !important;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-top {
+    height: 80%;
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+
+.pos .invoice-action {
+    cursor: pointer;
+}
+
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #eeeeee;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+
+}
+
+.pos .search-clear {
+    position: inherit;
+    font-size: 28px;
+}
+
+.form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #393939;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #eeeeee;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form button:hover, .form button:active, .form button:focus {
+    background: #43A047;
+}
+
+.pos .category-button .category-img img {
+    max-height: 60px;
+    margin-top: 30px
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #393939;
+    text-decoration: none;
+}
+
+.form .register-form {
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container .info span .fa {
+    color: #EF3B3A;
+}
+
+.pos .confirm-logout {
+    margin-top: 10px;
+    color: #F44336;
+}
+
+.pos .order_signature {
+    font-size: 16px;
+    color: #000000;
+    margin-left: 10px;
+    width: 150px;
+    text-align: left;
+    border-bottom: 1px solid;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.pos .promotion-label {
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+    width: 200px;
+    text-align: left;
+    border-bottom: 1px solid;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.pos.mobile .order_line_logo {
+    max-width: 65px;
+}
+
+.pos .pos_signature {
+    background: #03A9F4;
+    margin: 20px;
+    margin-top: 30px;
+    height: 140px;
+}
+
+.pos .signature {
+    height: 60px;
+    max-width: 200px;
+    margin-left: -15px;
+}
+
+.pos .pos_note {
+    float: left;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 900;
+    border-bottom: 1px solid;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    max-width: 150px;
+    text-align: left;
+}
+
+.pos .order-note {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.pos .line_product_price_quantity {
+    max-height: 100px;
+    background: gray;
+    color: white;
+    padding: 6px;
+}
+
+.pos .so_link {
+    color: blue;
+}
+
+.pos .so_info {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-style: oblique;
+    color: blue;
+}
+
+.pos .currency-rate {
+    color: #6ec89b;
+    font-size: 14px;
+}
+
+.pos .paymentline .col-due, .pos .paymentline .col-tendered, .pos .paymentline .col-change {
+
+}
+
+.pos .select-currency {
+    background: white;
+    color: #000000;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+}
+
+.pos .currency-rate {
+    color: white;
+    font-size: 14px;
+}
+
+.pos .currency-covert {
+    color: white;
+    font-size: 14px;
+}
+
+.screen .right-content {
+    top: 40px
+}
+
+.pos .multi-currency {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    color: white;
+    margin-right: 25px;
+}
+
+.pos .search-products {
+    height: 20px;
+    margin-top: 3px;
+}
+
+.pos.modile .input-search-products {
+    left: 200px;
+    float: left;
+    width: 100%;
+}
+
+.pos .product_not_available {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 100px;
+    height: 200px;
+    text-align: center;
+}
+
+.pos .product_not_available span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #eeeeee;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #F44336;
+    position: absolute;
+    top: 19px;
+    right: -21px;
+}
+
+.pos .product_not_available span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: solid 1px rgb(110, 200, 155);
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: solid 1px rgb(110, 200, 155);
+}
+
+.pos .product_not_available span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: solid 1px rgb(110, 200, 155);
+    border-right: solid 1px rgb(110, 200, 155);
+    border-bottom: 3px solid transparent;
+    border-top: solid 1px rgb(110, 200, 155);
+}
+
+.pos .product_available {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 100px;
+    height: 200px;
+    text-align: center;
+}
+
+.pos .product_available span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #eeeeee;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#9BC90D 0%, #79A70A 100%);
+    position: absolute;
+    top: 19px;
+    right: -21px;
+}
+
+.pos .product_available span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: solid 1px rgb(110, 200, 155);
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: solid 1px rgb(110, 200, 155);
+}
+
+.pos .product_available span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: solid 1px rgb(110, 200, 155);
+    border-bottom: 3px solid transparent;
+    border-top: solid 1px rgb(110, 200, 155);
+}
+
+.pos .paymentline. item {
+    font-size: 14px;
+}
+
+.screen .full-content {
+    background: inherit;
+}
+
+.pos .return_line {
+    color: #E91E63;
+}
+
+.pos .list-line {
+    margin: auto;
+    bottom: 0px;
+    max-width: 800px;
+}
+
+.pos .order-note-information {
+    margin-left: 40px;
+    float: left;
+    width: 50%;
+    text-align: left;
+    background: white;
+    margin-top: 10px;
+}
+
+.pos .tooltip-info {
+    font-size: 14px;
+    font-style: normal;
+    color: #000000;
+    text-align: left
+}
+
+.pos .line-variant {
+    font-size: 14px;
+    color: #393939;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.pos .clientlist-screen .button.new-product {
+    right: 0px;
+    float: right;
+}
+
+.pos .label-lot {
+    font-size: 14px;
+    padding-left: 10px;
+    float: left
+}
+
+.pos .popup input, .pos .popup-input {
+    width: 90%;
+    border-radius: 3px;
+    border: 1px solid #555555;
+    border-bottom: 1px solid #555555 !important;
+    color: #000000;
+}
+
+select.form-control {
+    border: 1px solid #000000 !important;
+
+}
+
+.pos .voucher {
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.pos .voucher-label {
+    font-size: 14px;
+    float: left;
+    padding-left: 24px;
+    color: white;
+    font-weight: 900;
+}
+
+.pos .checkbox-label {
+    font-size: 14px;
+    text-align: left;
+    float: left;
+    padding-left: 24px;
+    color: #000000;
+    width: 200px;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.pos .voucher-form-error {
+    background: #6ec89b;
+}
+
+.pos .voucher-select {
+    width: 90%;
+    padding: 5px !important;
+    font-size: 15px;
+    height: 50px;
+    line-height: 50px;
+    background: white;
+}
+
+.pos .voucher-form-requi#6ec89b {
+    color: #6ec89b;
+}
+
+.pos .table {
+    width: 100%;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    cursor: default;
+    z-index: 1001 !important;
+    background-color: #eeeeee;
+    min-height: 40px;
+}
+
+.ui-menu-item {
+    color: blue;
+    cursor: pointer;
+    min-height: 40px;
+}
+
+.ui-menu-item a {
+    line-height: 40px;
+    font-weight: 400;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    padding: 10px;
+    color: blue;
+    font-size: 14px;
+    height: 30px;
+    border-bottom: 1px solid #FF5722;
+}
+
+.pos .info_tooltip {
+    top: auto;
+    height: auto;
+    bottom: 300px;
+    background: #6EC89B;
+}
+
+.pos .popup_note {
+    max-width: 350px;
+}
+
+.pos .image-row {
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 6px;
+    margin-left: 10px;
+    float: left;
+}
+
+.pos .timeline.timeline-simple {
+    margin-top: 0px;
+    padding: 0 0 0px;
+}
+
+.pos .breadcrumb:last-child {
+    border-right: none;
+    height: 52px;
+}
+
+.screen .centered-content {
+    border-left: none;
+    border-right: none;
+}
+
+.pos .return-order {
+    height: 30px;
+    width: 80px;
+}
+
+.pos .made-invoice {
+    height: 30px;
+    width: 80px;
+}
+
+.pos .register-amount {
+    height: 30px;
+    width: 80px;
+}
+
+.pos .input-required {
+    color: red;
+}
+
+.pos .reprint-order {
+    height: 30px;
+    width: 80px;
+}
+
+.pos .pos_detail {
+    padding-top: 30px;
+}
+
+.pos .order-container {
+    background: inherit;
+}
+
+.pos .shipping_information {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    border-top: solid 1px rgb(110, 200, 155);
+    color: #888;
+}
+
+.pos .button-top-left {
+    left: 10%;
+}
+
+.pos .button_bottom {
+    right: 400px
+}
+
+.pos .button-top-right {
+    left: 75%;
+    right: 0px;
+}
+
+.pos .lines_detail {
+    overflow: auto !important;
+    height: 200px;
+}
+
+.pos .state {
+    color: blue !important;
+    font-weight: 900;
+}
+
+.pos .notification {
+    top: 5px;
+    right: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    background: #e91e63;
+    color: white;
+    min-width: 20px;
+    padding: 0px 5px;
+    height: 20px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 19px;
+    vertical-align: middle;
+}
+
+.pos .pos-content {
+    background: #aaaaaa;
+}
+
+.pos .orderline_image {
+    width: 15px;
+    padding-right: 5px;
+    border-radius: 20% !important;
+}
+
+.pos .product_list_image {
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 5%;
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 20px;
+}
+
+
+.pos .lock-dialog {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.pos .lock-dialog .lock_popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #F0EEEE;
+    border-radius: 3px;
+    z-index: 1200;
+}
+
+.pos .oe_status .oe_icon {
+    width: auto;
+}
+
+.pos .paymentline .refresh-rounding-button {
+    cursor: pointer;
+    text-align: center;
+}
+
+.pos .paymentmethod {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.pos .button_form {
+    width: 120px;
+    height: 45px;
+}
+
+.screen .left-content.pc40 {
+    left: 75%;
+    width: 100%;
+    top: 0px !important;
+    right: 0px;
+    border-right: none;
+    border-left: 1px solid #000000;
+}
+
+.pos .paymentmethods-container .label {
+    border-bottom: 1px solid #000000;
+    border-radius: 0px;
+
+}
+
+.screen .screen-content {
+    border-right: none;
+    border-left: none;
+}
+
+.pos .only_supplier {
+    left: 25%;
+    border-color: whitesmoke;
+    background: rgb(230, 230, 230);
+    top: 1px;
+    border-radius: 3px;
+}
+
+.pos .only_customer {
+    left: 125px;
+    border-color: whitesmoke;
+    background: rgb(230, 230, 230);
+    top: 1px;
+    border-radius: 3px;
+}
+
+.pos .button_sync {
+    margin-top: 10px !important;
+    background: #FF5733 !important;
+    color: white !important;
+    left: 50%;
+    margin-left: 120px !important;
+}
+
+.screen .right-content.pc60 {
+    top: 0px !important;
+    left: 25%;
+    right: 25%;
+    border-left: 1px solid #000000;
+}
+
+.screen .top-content {
+    border-bottom: none;
+}
+
+.pos .receipt-screen {
+    background: #d2d2d2;
+}
+
+.screen .top-content h1 {
+    color: #000000;
+}
+
+/*.pos .paymentlines .label {*/
+/*    color: white !important;*/
+/*}*/
+/*.pos .invoice_journals .label {*/
+/*    color: white !important;*/
+/*}*/
+.pos .payment-screen .top-content {
+    display: none;
+}
+
+.pos .paymentlines-container {
+    border-bottom: 1px solid #000000;
+}
+
+.pos .paymentlines-container .paymentlines {
+    margin-left: -10px !important;
+}
+
+.pos .product .price-tag {
+    background: #3F51B5;
+    top: 0px;
+    color: white;
+    right: 0px;
+    min-height: 14px;
+    text-align: right;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.pos .product .price-tag-cost {
+    position: absolute;
+    font-size: 12px;
+    bottom: 20px;
+    right: 0px;
+    background: #7f82ac;
+    color: white;
+    line-height: 15px;
+    border-radius: 2px;
+}
+
+.pos .product .product_sequence {
+    position: absolute;
+    font-size: 10px;
+    top: 62px;
+    right: 0px;
+    color: rgba(0, 0, 0, 0.2);
+    line-height: 13px;
+    padding-top: 3px;
+}
+
+.pos .product .price-tag-2 {
+    position: absolute;
+    font-size: 10px;
+    top: 24px;
+    right: 0px;
+    vertical-align: top;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    line-height: 13px;
+    border-radius: 2px;
+}
+
+.pos .loader-feedback .progressbar {
+    background: slategray;
+}
+
+
+.pos .loader-feedback .progressbar > .progress {
+    background: rgb(110, 200, 155)
+}
+
+.timeline.timeline-simple > li > .timeline-panel {
+    max-height: 100px;
+}
+
+.pos .show_hide_pad {
+    cursor: pointer;
+    transform: scale(6, 2);
+    color: #FF5722;
+    font-size: 18px;
+}
+
+.pos .mode-button {
+    color: #393939;
+}
+
+.pos .show_hide_category_list {
+    cursor: pointer;
+    transform: scale(2, 1);
+    color: #393939;
+    font-size: 40px;
+}
+
+.pos .actionpad {
+    width: 240px;
+    border-top: none;
+    margin: 0px;
+    margin-top: 2px;
+    border-left: none;
+}
+
+.pos .order-button .order-sequence {
+    font-weight: 400;
+}
+
+
+.screen .top-content .button.next {
+    text-transform: inherit;
+    margin-right: 5px;
+    color: #000000 !important;
+}
+
+.pos .pads .numpad button:hover {
+    background: #6EC89B !important;
+}
+
+.pos .mode-button.selected-mode {
+    background: #6EC89B !important;
+}
+
+.pos .pads .numpad {
+    width: 55%;
+    margin-top: 5px;
+    margin: 0px;
+    border-top: none;
+    float: right;
+    margin-left: 0px;
+    border-left: none;
+}
+
+.pos .payment-numpad .numpad button {
+    height: 62px;
+    margin-left: 5px !important;
+    width: 62px;
+    margin: 4px;
+}
+
+.pos .payment-numpad {
+    width: 285px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 20px;
+    padding: 0px;
+    float: right;
+}
+
+.pos .numpad button:last-child {
+    border-radius: 0px;
+}
+
+.pos .pads .numpad button {
+    margin: 2px;
+    border: 1px solid #aaaaaa;
+    font-weight: 900;
+    color: #000000;
+    float: left;
+    width: 70px;
+    height: 65px;
+    border-radius: 3px;
+    /*box-shadow: 5px 10px 6px -2px #333333;*/
+}
+
+.pos .actionpad .button.set-customer.decentered {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.pos .actionpad .button {
+    height: 62px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.pos .leftpane .pads {
+    border-top: none;
+    background: #eeeeee;
+}
+
+.pos .actionpad .button.set-customer {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 235px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: inherit;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    margin-bottom: 5px;
+    background: #9E9E9E;
+    color: #000000;
+    border-radius: 3px;
+    border: 1px solid #aaaaaa;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.pos .actionpad .button.set-customer:hover {
+    background: #6EC89B;
+}
+
+.pos .actionpad .button.pay:hover {
+    background: #6EC89B;
+}
+
+.pos .numpad button {
+    border: none;
+    color: #000000;
+    float: unset;
+    background: #9E9E9E;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+.pos .payment-numpad .numpad button {
+    background: #ffffff;
+    color: #000000;
+}
+
+.pos .actionpad .button.set-customer .button_key {
+    min-height: 18px !important;
+    line-height: 20px;
+    margin-right: 0px;
+}
+
+.pos .actionpad .button.pay {
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 235px;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: inline-block;
+    float: none;
+    height: 205px;
+    background: #9E9E9E;
+    color: #000000;
+    border-radius: 3px;
+    border: 1px solid #aaaaaa;
+}
+
+.pos .actionpad .button.pay .button-icon {
+    margin-top: -50px !important;
+}
+
+.pos .actionpad .button.pay .button_key {
+    line-height: 20px;
+    margin-right: -10px;
+    width: 50px;
+    text-transform: none;
+}
+
+.pos .actionpad .button.set-customer:hover {
+    background-color: #6EC89B;
+}
+
+.pos .numpad-backspace {
+    background-color: red;
+}
+
+.pos .actionpad .button.pay:hover {
+    background: #6EC89B;
+
+}
+
+.pos .block_add_product {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.pos .product-list-container .list {
+    width: 100%;
+    line-height: 30px;
+    margin-left: 10px !important;
+}
+.pos .product-list-container .list tr {
+    cursor: pointer;
+    color: black;
+    line-height: 30px;
+    background: linear-gradient(to right bottom, #ffffff, #eeeeee);
+    font-size: 14px;
+    border-bottom: 1px solid gray;
+}
+
+.pos .product-list-container .list tr:hover {
+    background: rgb(110, 200, 155);
+    color: white;
+}
+
+.pos .clientlist-screen .client-list th, .pos .clientlist-screen .client-list td {
+    border: 1px solid #aaaaaa;
+    font-size: 16px;
+}
+
+.pos .product-list-container .list thead > tr:hover,
+.pos .product-list-container .list tbody > tr:nth-child(even):hover {
+    background: rgb(110, 200, 155);
+    color: white;
+
+}
+
+.pos .product_special {
+    background: gray;
+    text-align: center;
+    right: 0px;
+    color: white;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.pos .order .order-empty {
+    color: #b1b1b1;
+}
+
+.pos .select_box {
+    padding-top: 10px;
+}
+
+.pos .quickly_buttons {
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.pos .button-list {
+    background: #aaaaaa;
+}
+
+.pos .quickly_icon_label {
+    color: #000000;
+    font-weight: 400;
+    max-width: 100px;
+    max-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: inherit;
+}
+
+.pos .breadcrumb-arrow {
+    width: 10px;
+    margin-top: 0px;
+    height: 52px;
+}
+
+.pos .category_child {
+    color: #eeeeee;
+    font-weight: 900;
+}
+
+.pos .breadcrumb-button {
+    color: #000000;
+    font-weight: 500;
+    font-size: 14px;
+    height: 52px;
+}
+
+.pos .breadcrumb-button.breadcrumb-home {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.pos .breadcrumb-button.breadcrumb-home:hover {
+    -webkit-box-shadow: 0 10px 6px -6px #FF5722;
+    -moz-box-shadow: 0 10px 6px -6px #FF5722;
+    box-shadow: 0 10px 6px -6px #FF5722;
+}
+
+.pos .header_order {
+    padding-left: 4px;
+    padding-top: 4px;
+    max-width: 540px;
+    height: 45px;
+    background: #9E9E9E;
+    border-bottom: 1px solid gray;
+}
+
+.pos .quickly_icon {
+    width: 80px;
+    float: left;
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+.pos .quickly_icon:hover {
+    background: rgb(110, 200, 155);
+    -webkit-box-shadow: 0 10px 6px -6px #FF5722;
+    -moz-box-shadow: 0 10px 6px -6px #FF5722;
+    box-shadow: 0 10px 6px -6px #FF5722;
+}
+
+.pos .rightpane {
+    left: 760px;
+}
+
+.pos .collapse .in {
+    background-color: white;
+}
+
+.pos .pull-left {
+    width: 30%;
+    text-align: center;
+}
+
+.pos .pull-right {
+    width: 30%;
+    text-align: center;
+}
+
+.pos .form-footer {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.pos .only_partial_payment_orders {
+    left: 70%;
+    right: 10px;
+}
+
+.pos .left_button {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background: #ffffff;
+    line-height: 20px;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.pos .js_connected {
+    margin-left: -7px;
+}
+
+.pos .left_button:hover {
+    -webkit-box-shadow: 0 10px 6px -6px #FF5722;
+    -moz-box-shadow: 0 10px 6px -6px #FF5722;
+    box-shadow: 0 10px 6px -6px #FF5722;
+    background-color: #6EC89B;
+    font-weight: 900;
+    color: white;
+}
+
+.pos .payment-screen .left_button {
+    width: 80px !important;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+.pos .button-name {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+    line-height: 20px;
+}
+
+.pos .button-icon {
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.pos .highlight {
+    background: #6ec89b;
+    color: white !important;
+}
+
+.pos .payment-buttons {
+    width: 60%;
+    margin-top: 20px;
+    float: left;
+}
+
+.pos .note_order {
+    font-size: 40px;
+    cursor: pointer;
+    line-height: initial;
+}
+
+.pos .note_order:hover {
+    color: #6EC89B;
+}
+
+.pos .signature_order {
+    font-size: 40px;
+    cursor: pointer;
+    line-height: initial;
+}
+
+.pos .signature_order:hover {
+    color: #6EC89B;
+}
+
+.pos .popup.popup-selection .selection {
+    max-height: 500px;
+}
+
+.pos .popup.popup-selection .selection-item {
+    width: auto;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+    padding: 0px 16px;
+    border-bottom: solid 1px #9E9E9E;
+}
+
+.pos .popup.popup-selection .selection-item:hover {
+    background: gray;
+    color: white !important;
+}
+
+
+.pos .hot_key {
+    position: absolute;
+    right: 0px;
+    vertical-align: top;
+    color: #000000;
+    line-height: 14px;
+    background: blue;
+    padding: 1px 1px;
+    text-align: right;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.pos .button_key {
+    font-size: 12px;
+    text-align: center;
+    border-radius: 3px;
+    background: #FF5722;
+    min-width: 20px;
+    float: right;
+    color: white;
+}
+
+.pos .pads .numpad button .button_key {
+    margin-top: 5px !important;
+    float: left;
+    margin-left: 15px;
+    line-height: 20px;
+}
+
+.pos .js_msg {
+    color: #FF5722;
+}
+
+.pos .update-rate {
+    cursor: pointer;
+    background: #FF5722;
+    border-radius: 4%;
+}
+
+.pos .payment-numpad .numpad button:first-child {
+    border-top-left-radius: 3px;
+}
+
+.pos .order .orderline .product-name {
+    color: #000000;
+}
+
+.pos .searchbox input {
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    margin: 7px !important;
+}
+
+.pos .searchbox:hover {
+    -webkit-box-shadow: 0 10px 6px -6px #FF5722;
+    -moz-box-shadow: 0 10px 6px -6px #FF5722;
+    box-shadow: 0 10px 6px -6px #FF5722;
+}
+
+.pos .order .orderline {
+    padding-bottom: 12px;
+    padding-left: 10px;
+}
+
+.pos .promotion-line {
+    color: #000000;
+    font-weight: 500;
+}
+
+.pos .order .orderline:hover {
+    background: darkgray;
+    color: white !important;
+}
+
+.pos .order {
+    padding-top: 0px;
+    max-width: 540px;
+    background: #fff;
+}
+
+.pos .order-scroller {
+    background: #fff;
+}
+
+.pos .order .orderline .info-list {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #000000;
+}
+
+.pos .extra_functions {
+    margin-left: 10px;
+    color: #000000;
+    font-size: 13px;
+}
+
+.pos .list th {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.pos .order .orderline .info-list em {
+    color: #000000;
+    font-weight: 900;
+}
+
+.pos .client-special-info {
+    font-size: 13px;
+    line-height: 12px;
+    float: left;
+    margin-left: 35px;
+    border-left: 1px solid #393939;
+    text-align: left;
+    font-weight: 900;
+    height: 15px;
+    padding: 5px;
+    color: #fff;
+}
+
+.pos .order .orderline .uom_change {
+    text-align: left;
+    width: 100%;
+    font-size: 80%;
+    color: blueviolet;
+}
+
+.pos .order .summary {
+    width: 100%;
+    text-align: right;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.pos .order .summary .line .subentry > span {
+    font-size: 16px;
+    margin-bottom: 80px;
+    float: right;
+}
+
+.pos .order .summary .line .subentry {
+    font-size: 16px;
+    text-align: left;
+    color: black;
+}
+
+.pos .order .summary .total .value {
+    font-size: 22px;
+    margin-bottom: 80px;
+    color: black;
+}
+
+.pos .total .label {
+    font-size: 18px;
+}
+
+.pos section button {
+    font-size: 16px;
+}
+
+.pos .order_widget_search_products {
+    width: 150px;
+    float: left;
+    font-size: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 3px;
+    border-bottom: none;
+    border: 1px solid #393939;
+}
+
+.pos .order_widget_search_partners {
+    width: 150px;
+    float: right;
+    font-size: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 3px;
+    border-bottom: none;
+    border: 1px solid #393939;
+}
+
+.pos .mode-button.selected-mode {
+    font-weight: bold;
+}
+
+.pos_disable_click {
+    pointer-events: none;
+}
+
+.pos .rightpane-header {
+    background: inherit;
+    margin-left: 10px;
+    height: 32px;
+    border-bottom: 0px;
+    padding-top: 20px;
+}
+
+.pos .order-button.selected {
+    background: #6EC89B;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    border-bottom: none;
+}
+
+.pos .order-button {
+    border-radius: 4%;
+    box-shadow: none;
+    margin: 1px;
+}
+
+.pos .category-button {
+    border-bottom-width: 0px;
+    border: none;
+
+
+}
+
+.pos button, .pos a.button {
+    background: #eeeeee;
+    border: none;
+}
+
+.pos .row {
+    padding-bottom: 7px;
+}
+
+.pos .pos_logo {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.pos .popup_pos_logo {
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 3px;
+}
+
+.pos .invoice_journals {
+    padding-top: 100px;
+}
+
+.pos .order_logo {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.pos .header_logo {
+    padding: 3px;
+    width: 41px;
+    height: 41px;
+}
+
+.pos .product-list {
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+}
+
+.pos .pos-topheader {
+
+}
+
+.pos .right_pane_logo {
+    padding-top: 5px;
+    top: 10px;
+    height: 20px;
+}
+
+.pos .product-list-sale-extra {
+
+}
+
+.pos .categories {
+    border-bottom: solid 0px gray;
+    margin-top: 0px;
+}
+
+
+.pos .category_row {
+    cursor: pointer;
+    background-color: #9E9E9E;
+    color: white;
+    text-transform: uppercase;
+    max-width: 100px;
+    overflow: hidden;
+    text-align: left;
+
+    max-height: 30px;
+    font-size: 10px;
+    margin: 5px;
+    margin-bottom: 200px;
+}
+
+.pos .category_row:hover {
+    background: gray;
+    color: white !important;
+}
+
+.pos .category_row .highlight {
+    background: #6EC89B;
+}
+
+.pos .product-information {
+    width: 80px;
+}
+
+.pos .icon_line {
+    margin-left: 15px;
+    cursor: pointer;
+    float: right;
+}
+
+.pos .icon_line:hover {
+    -webkit-box-shadow: 0 10px 6px -6px #FF5722;
+    -moz-box-shadow: 0 10px 6px -6px #FF5722;
+    box-shadow: 0 10px 6px -6px #FF5722;
+}
+
+.pos .badge {
+    font-weight: 400;
+    color: black;
+}
+
+.pos .icon_line_logo {
+    max-height: 25px;
+    max-width: 25px;
+    padding: 3px;
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 6px -6px #393939;
+}
+
+.pos .tag {
+    position: relative;
+    vertical-align: top;
+    display: inline-block;
+    font-size: 11px;
+    margin: 8px !important;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pos .clientlist-screen .client-name {
+    font-weight: 900;
+}
+
+.pos .clientlist-screen .client-details input.client-name {
+    font-weight: 900;
+}
+
+.pos .button_logo {
+    max-width: 40px;
+}
+
+.pos .clientlist-screen .client-details input, .pos .clientlist-screen .client-details select {
+    margin-left: 12px;
+    max-width: 300px;
+    background: rgb(255, 255, 255);
+    font-size: 16px;
+    border: solid 1px #999999 !important;
+    padding: 20px;
+}
+
+.pos .label {
+    font-weight: 600;
+    color: #000000;
+    font-size: 13px;
+}
+
+.pos .paymentmethods-container {
+    margin-top: -15px;
+}
+
+.pos .clientlist-screen .client-picture {
+    margin-left: 10px;
+    border: 1px solid #F0EEEE;
+    border-radius: 3px;
+
+}
+
+.pos .order .orderline .price {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000
+}
+
+.screen .top-content .button {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    /*box-shadow: 0px 5px 5px 0px #ffffff;*/
+}
+
+.pos .clientlist-screen .searchbox input {
+    width: 120px;
+    height: 16px;
+    margin-top: 9px !important;
+}
+
+.screen .top-content .button:hover {
+    background: gray;
+    color: white !important;
+
+}
+
+.pos .clientlist-screen .button.new-customer {
+    background: #6EC89B;
+    background: #FF5722 !important;
+    color: white !important;
+}
+
+.pos > span .detail {
+    color: #000000;
+}
+
+.pos .order_line_logo {
+    max-width: 20px;
+}
+
+.pos .actionpad .button.set-customer.decente#F44336 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.pos .js_synch {
+    border-right: none;
+    max-width: 10px;
+}
+
+.pos .js_synch:hover {
+    -webkit-box-shadow: 0 10px 6px -6px #FF5722;
+    -moz-box-shadow: 0 10px 6px -6px #FF5722;
+    box-shadow: 0 10px 6px -6px #FF5722;
+}
+
+.pos .screen .header-cell {
+    padding-top: 10px;
+}
+
+.pos .screen {
+    overflow: hidden;
+}
+
+.pos .pos-branding .username {
+    background: #FF5722;
+    float: left;
+    max-width: 100px;
+    text-overflow: ellipsis;
+    overflow-x: auto;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    font-style: normal;
+    margin-right: 0px;
+}
+
+.pos .notifications_coming {
+    background: #FF5722 !important;
+    font-weight: 900;
+    font-size: 16px;
+    width: 21px !important;
+    height: 21px !important;
+    border-radius: 30px;
+}
+
+.pos .clientlist-screen .pos-sale-ticket {
+    background-color: #eeeeee;
+    color: #000000;
+    width: 25%;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pos .back {
+    background: rgb(110, 200, 155) !important;
+}
+
+.pos .payment-screen .pos-sale-ticket {
+    background-color: white;
+    width: 20%;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border: solid 1px rgb(255, 255, 255)
+}
+
+.pos .screen p {
+    text-align: left;
+}
+
+.pos .ticket_image {
+    text-align: center;
+    text-align: center;
+    width: 25%;
+    padding-top: 10px;
+    float: right;
+}
+
+.pos .popup input:focus, .pos .popup-input.active {
+    box-shadow: 0px 0px 0px 0px #393939;
+}
+
+.pos .popup.popup-number {
+    background: #000000;
+}
+
+.pos .popup-numpad .input-button, .pos .popup-numpad .mode-button {
+    background: #9E9E9E;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.pos .ticket_image {
+    text-align: center;
+}
+
+.pos .header_order_widget_logo {
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+    min-width: 40px;
+    margin-right: 10px;
+}
+
+.pos .shop_logo {
+    min-width: 30px;
+    padding: 0px !important;
+    cursor: pointer;
+    max-width: 80px;
+    max-height: 30px;
+}
+
+.pos .backup_icon {
+    cursor: pointer;
+    padding: 0px !important;
+}
+
+.pos .category_home {
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 5px;
+}
+
+.pos .category_home_icon {
+    max-width: 35px;
+    border-radius: 3px;
+    padding: 3px;
+    height: 35px;
+}
+
+.pos .rightpane-header .searchbox {
+    margin-top: -35px;
+    margin-right: -5px;
+}
+
+.pos .clientlist-screen .edit-buttons .button {
+    display: inline-block;
+    margin-left: 16px;
+    color: rgb(128, 128, 128);
+    /*box-shadow: 5px 10px 6px -2px #333333;*/
+    cursor: pointer;
+    height: 50px;
+    font-size: 36px;
+}
+
+.pos .clientlist-screen .edit-buttons .button:hover {
+    background: gray;
+    color: white !important;
+}
+
+.pos .logo_shop_header {
+    height: 19px;
+    width: 20px;
+    padding: 14px;
+    margin-right: 0px;
+}
+
+.pos .logo_shop_header:hover {
+    -webkit-box-shadow: 0 10px 6px -6px #FF5722;
+    -moz-box-shadow: 0 10px 6px -6px #FF5722;
+    box-shadow: 0 10px 6px -6px #FF5722;
+}
+
+.pos .logo-shop {
+    height: 48px;
+    width: 55px;
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pos .voucher_code {
+    color: #6EC89B;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pos .promotion_recommend_customer {
+    width: 250px;
+    border-radius: 3px;
+    margin-left: 10px;
+    background: #000000;
+}
+
+.pos .promotion_active {
+    border-bottom: 1px solid;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 10px;
+    color: white;
+}
+
+.pos .promotion {
+    padding-left: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.pos .order .promotion_recomment_customer {
+    border-bottom: solid 1px rgb(110, 200, 155);
+    width: 100%;
+    text-align: left;
+    max-width: 200px;
+}
+
+.pos .pos-sale-ticket table td {
+    padding-right: 10px;
+}
+
+.pos .login {
+    width: 40%;
+}
+
+.pos .logout {
+    width: 40%;
+}
+
+.pos .receipt-screen .centered-content .button {
+    color: #000000;
+    background: #6ec89b;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 300px;
+    text-align: center;
+}
+
+.pos .order-list-scroller {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.pos .cart-list {
+    width: 100%;
+}
+
+.pos .input_form {
+    border: 1px #c57272 !important;
+    color: #000000;
+    width: 100%;
+    background: #eeeeee;
+    border-radius: 6px;
+    font-size: 30px;
+    font-weight: bold;
+    height: 50px;
+}
+
+.pos .pos-sale-ticket {
+    color: #000000;
+}
+
+.pos .loader {
+    background-color: #393939;
+    color: white;
+}
+
+.pos .loader-feedback h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.pos .cart_qty {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #e91e63;
+    color: white;
+    line-height: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    margin-right: 0px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.pos .popup .body {
+    max-height: 300px;
+    overflow: hidden !important;
+    overflow-y: auto !important;
+    padding-bottom: 50px;
+}
+
+.label {
+    color: #000000;
+}
+
+.pos .leftpane {
+    left: 0px;
+    background: white;
+    width: 540px;
+    border-right: 0px solid rgba(0, 0, 0, 0.14);
+}
+
+.pos .category-list.simple {
+    background: none;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    border-bottom: 0px solid;
+    margin-left: 10px;
+    padding-right: 40px;
+}
+
+.pos .text_logo {
+    color: #000000;
+}
+
+.pos .payment-numpad .numpad {
+    width: 310px !important;
+    margin-left: 0px;
+}
+
+.pos .clientlist-screen .client-list {
+    background: #ffffff;
+}
+
+.pos .clientlist-screen .client-list tr.highlight {
+    color: #000000 !important;
+}
+
+.pos .clientlist-screen .client-list tr:hover {
+    background: gray;
+    color: white !important;
+}
+
+.pos .order .orderline.selected {
+    background: #6EC89B;
+}
+
+.pos .category-simple-button {
+    border-radius: 3px;
+    background: #ffffff;
+    min-width: 100px;
+    color: #000000;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    max-width: 100px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /*box-shadow: 5px 10px 6px -2px #333333;*/
+}
+
+.pos .category-simple-button:hover {
+    background: gray;
+    color: white !important;
+}
+
+.pos .sort {
+    padding-right: 10px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.pos .clientlist-screen .searchbox {
+    right: auto;
+    margin-top: 3px;
+}
+
+.screen .top-content .button.back {
+    left: 0px;
+    margin-left: 0px;
+    background: #6EC89B !important;
+    color: #000000 !important;
+}
+
+.payment-screen .paymentlines-empty .total {
+    text-align: center;
+    padding: 60px 0px 20px;
+    font-size: 60px;
+    color: #F44336;
+    text-shadow: 0px 2px #ff5722, 0px 2px 2px rgba(0, 0, 0, 0.27);
+}
+
+.pos .paymentline.extra .col-due {
+    color: #F44336;
+}
+
+.pos .rightpane-header .breadcrumbs {
+    margin-top: -28px;
+}
+
+.pos .clientlist-screen .remove-buttons {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 70px;
+}
+
+.pos .clientlist-screen .remove-buttons .button {
+    display: inline-block;
+    margin-left: 16px;
+    color: rgb(128, 128, 128);
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.pos .confirm_return {
+    float: right;
+    right: 0px;
+    margin-right: 0px;
+}
+
+.pos .clientlist-screen .full-content .subwindow.collapsed, .pos .clientlist-screen .full-content .subwindow-container.collapsed {
+    background: #eeeeee;
+}
+
+.pos .order-button.selected .order-sequence {
+    border-radius: 30px;
+    line-height: 40px;
+    padding: 0px 5px;
+    min-width: 30px;
+}
+
+.pos .pos-rightheader .header-button {
+    color: white;
+    border-right: none;
+    padding-right: 15px;
+    border-left: none;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.pos .order-button.square {
+    background: #FF5722;
+    color: white;
+}
+
+.pos .order-button.square:hover {
+    background: gray;
+    color: white !important;
+}
+
+.pos .show_hide_buttons {
+    background: #FF5722;
+    border-radius: 3px;
+    float: right;
+    margin: 1px;
+    padding-left: 20px;
+}
+
+.pos .show_hide_buttons:hover {
+    background: gray;
+    color: white !important;
+}
+
+.pos .category-button .category-name {
+    text-align: center;
+    font-size: 14px;
+
+    color: #000000;
+    line-height: 20px;
+}
+
+.pos .receipt-screen .cente#F44336-content .button {
+    background: rgb(110, 200, 155);
+    color: #000000;
+    font-size: 14px;
+}
+
+.pos .full_width {
+    max-width: 95%;
+    right: 20px;
+    left: 20px;
+}
+
+.pos .paymentline.selected {
+    background: #6EC89B;
+}
+
+.pos .paymentline .col-name {
+    font-weight: 600;
+}
+
+.pos .paymentline.selected .edit {
+    color: #00BCD4;
+    font-weight: bold;
+}
+
+.pos .find_customer > input {
+    max-width: 100px;
+    background: url("/point_of_sale/static/src/css/../img/search.png") no-repeat 10px;
+    background-color: #ffffff;
+    float: right;
+    margin-right: 1px;
+    font-size: 13px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 3px;
+    padding: 13px 30px;
+    border-bottom: none;
+}
+
+.pos .header-table {
+    border-top: 1px solid !important;
+}

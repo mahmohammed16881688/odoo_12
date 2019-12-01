@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="reward_button">
+        <div class="left_button">
+            <div class="button-icon">
+                <img src="/pos_retail/static/src/icons/rewards.png" class="pos_logo"/>
+            </div>
+            <div class="button-name">
+                Rewards Program
+            </div>
+        </div>
+    </t>
+
+    <t t-extend="OrderWidget">
+        <t t-jquery=".summary" t-operation="append">
+            <t t-if="widget.pos.loyalty and widget.pos.get_order()">
+                <div class="loyalty">
+                    <div class="loyalty-label">
+                        Customer points summary:
+                    </div>
+                    <div class="loyalty_redeem_point">
+                        Client point
+                        <span class='value client_point'>
+                            <t t-esc="widget.pos.get_order().get_client_point()['client_point']"/>
+                        </span>
+                    </div>
+                    <div class="loyalty_redeem_point">
+                        Redeem
+                        <span class='value redeem_point'>
+                            - <t t-esc="widget.pos.get_order().get_client_point()['redeem_point']"/>
+                        </span>
+                    </div>
+                    <div class='loyalty_remaining_point'>
+                        Remaining:
+                        <span class='value remaining_point'>
+                            = <t t-esc="widget.pos.get_order().get_client_point()['remaining_point']"/>
+                        </span>
+                    </div>
+                    <div class="loyalty_plus_point">
+                        Plus
+                        <span class='value plus_point'>
+                            + <t t-esc="widget.pos.get_order().get_client_point()['plus_point']"/>
+                        </span>
+                    </div>
+                    <div class='loyalty_next_point'>
+                        Next point
+                        <span class='value next_point'>
+                            = <t t-esc="widget.pos.get_order().get_client_point()['next_point']"/>
+                        </span>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </t>
+
+    <t t-extend="ClientDetails">
+        <t t-jquery="div[class*='client-details-right']" t-operation="append">
+            <div class='client-detail'>
+                <span class='label'>Loyalty Point</span>
+                <span class='detail'><t t-esc='partner.pos_loyalty_point || 0'/></span>
+            </div>
+        </t>
+    </t>
+
+    <t t-extend="ClientLine">
+        <t t-jquery=".client-line" t-operation="append">
+            <td><t class='point' t-esc='partner.pos_loyalty_point'/></td>
+            <td>
+                <t t-if="partner.pos_loyalty_type">
+                    <t class='point' t-esc='partner.pos_loyalty_type[1]'/>
+                </t>
+            </td>
+        </t>
+    </t>
+
+    <t t-extend="ClientListScreenWidget">
+        <t t-jquery="tr:eq(0)" t-operation="append">
+            <th>Point</th>
+            <th>Loyalty type</th>
+        </t>
+    </t>
+
+    <t t-extend="PosTicket">
+        <t t-jquery=".receipt-change" t-operation="after">
+            <table>
+                <t t-if="order.plus_point">
+                    <td class="pos-right-align point">
+                        Point plus: <t t-esc="order.plus_point.toFixed(2)"/>
+                    </td>
+                </t>
+                <t t-if="order.redeem_point">
+                    <td class="pos-right-align point">
+                        Point redeem: <t t-esc="order.redeem_point.toFixed(2)"/>
+                    </td>
+                </t>
+            </table>
+        </t>
+    </t>
+
+    <t t-extend="XmlReceipt">
+        <t t-jquery="div[class='after-footer']" t-operation="before">
+            <t t-if="receipt.plus_point">
+                <line>
+                    <left>Point plus: </left>
+                    <right><value><t t-esc='receipt.plus_point' /></value></right>
+                </line>
+            </t>
+            <t t-if="receipt.redeem_point">
+                <line>
+                    <left>Point redeem: </left>
+                    <right><value><t t-esc='receipt.redeem_point' /></value></right>
+                </line>
+            </t>
+        </t>
+    </t>
+
+<!--    <t t-extend="Orderline">-->
+<!--        <t t-jquery="ul[class*='info-list']:first .info" t-operation="append">-->
+<!--            <t t-if="line.plus_point">-->
+<!--                <img src="/pos_retail/static/src/icons/medal.png" class="order_line_logo"/>-->
+<!--                <span class="line_plus_point">-->
+<!--                    + <t t-esc="line.plus_point" /> (point)-->
+<!--                </span>-->
+<!--            </t>-->
+<!--            <t t-if="line.redeem_point">-->
+<!--                <img src="/pos_retail/static/src/icons/medal.png" class="order_line_logo"/>-->
+<!--                <span class="line_redeem_point">-->
+<!--                    <t t-esc="line.redeem_point" /> (point)-->
+<!--                </span>-->
+<!--            </t>-->
+<!--        </t>-->
+<!--    </t>  only single app-->
+
+
+</templates>
